@@ -1,0 +1,333 @@
+CompUnitAST
+    ExternalDefAST: #include <stdio.h>
+    DeclAST
+        ConstDeclAST
+            ConstDefAST: b0
+                NumExpAST: 4
+                ConstInitValAST
+                    ConstInitValAST
+                        NumExpAST: 0
+                    ConstInitValAST
+                        NumExpAST: 1
+    DeclAST
+        ConstDeclAST
+            ConstDefAST: c0
+                NumExpAST: 7
+                ConstInitValAST
+                    ConstInitValAST
+                        NumExpAST: 2
+                    ConstInitValAST
+                        NumExpAST: 8
+                    ConstInitValAST
+                        NumExpAST: 6
+                    ConstInitValAST
+                        NumExpAST: 3
+                    ConstInitValAST
+                        NumExpAST: 9
+                    ConstInitValAST
+                        NumExpAST: 1
+                    ConstInitValAST
+                        NumExpAST: 5
+    DeclAST
+        ConstDeclAST
+            ConstDefAST: e0
+                NumExpAST: 2
+                ConstInitValAST
+                    ConstInitValAST
+                        NumExpAST: 22
+                    ConstInitValAST
+                        NumExpAST: 33
+            ConstDefAST: g0
+                NumExpAST: 9
+                ConstInitValAST
+                    ConstInitValAST
+                        NumExpAST: 85
+                    ConstInitValAST
+                        NumExpAST: 0
+                    ConstInitValAST
+                        NumExpAST: 1
+                    ConstInitValAST
+                        NumExpAST: 29
+    DeclAST
+        ConstDeclAST
+            ConstDefAST: scj82c9s0j
+                ConstInitValAST
+                    NumExpAST: 9
+    DeclAST
+        ConstDeclAST
+            ConstDefAST: c
+                NumExpAST: 5
+                NumExpAST: 3
+                ConstInitValAST
+                    ConstInitValAST
+                        NumExpAST: 1
+                    ConstInitValAST
+                        NumExpAST: 2
+                    ConstInitValAST
+                        NumExpAST: 3
+                    ConstInitValAST
+                        NumExpAST: 4
+                    ConstInitValAST
+                        NumExpAST: 5
+                    ConstInitValAST
+                        NumExpAST: 6
+                    ConstInitValAST
+                        NumExpAST: 7
+                    ConstInitValAST
+                        NumExpAST: 8
+                    ConstInitValAST
+                        NumExpAST: 9
+                    ConstInitValAST
+                        NumExpAST: 10
+                    ConstInitValAST
+                        NumExpAST: 11
+                    ConstInitValAST
+                        NumExpAST: 12
+                    ConstInitValAST
+                        NumExpAST: 13
+                    ConstInitValAST
+                        NumExpAST: 14
+                    ConstInitValAST
+                        NumExpAST: 15
+    DeclAST
+        ConstDeclAST
+            ConstDefAST: d
+                NumExpAST: 5
+                NumExpAST: 3
+                ConstInitValAST
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 1
+                        ConstInitValAST
+                            NumExpAST: 2
+                        ConstInitValAST
+                            NumExpAST: 3
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 4
+                        ConstInitValAST
+                            NumExpAST: 5
+                        ConstInitValAST
+                            NumExpAST: 6
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 7
+                        ConstInitValAST
+                            NumExpAST: 8
+                        ConstInitValAST
+                            NumExpAST: 9
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 10
+                        ConstInitValAST
+                            NumExpAST: 11
+                        ConstInitValAST
+                            NumExpAST: 12
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 13
+                        ConstInitValAST
+                            NumExpAST: 14
+                        ConstInitValAST
+                            NumExpAST: 15
+            ConstDefAST: e
+                NumExpAST: 5
+                NumExpAST: 3
+                ConstInitValAST
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 1
+                        ConstInitValAST
+                            NumExpAST: 2
+                        ConstInitValAST
+                            NumExpAST: 3
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 4
+                        ConstInitValAST
+                            NumExpAST: 5
+                        ConstInitValAST
+                            NumExpAST: 6
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 7
+                        ConstInitValAST
+                            NumExpAST: 8
+                        ConstInitValAST
+                            NumExpAST: 9
+                    ConstInitValAST
+                        NumExpAST: 10
+                    ConstInitValAST
+                        NumExpAST: 11
+                    ConstInitValAST
+                        NumExpAST: 12
+                    ConstInitValAST
+                        NumExpAST: 13
+                    ConstInitValAST
+                        NumExpAST: 14
+                    ConstInitValAST
+                        NumExpAST: 15
+    DeclAST
+        ConstDeclAST
+            ConstDefAST: g
+                NumExpAST: 5
+                NumExpAST: 3
+                ConstInitValAST
+                    ConstInitValAST
+                        NumExpAST: 1
+                    ConstInitValAST
+                        NumExpAST: 2
+                    ConstInitValAST
+                        NumExpAST: 3
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 4
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 7
+                    ConstInitValAST
+                        NumExpAST: 10
+                    ConstInitValAST
+                        NumExpAST: 11
+                    ConstInitValAST
+                        NumExpAST: 12
+    DeclAST
+        VarDeclAST
+            VarDefAST: tt
+                InitValAST
+                    NumExpAST: 5
+    DeclAST
+        VarDeclAST
+            VarDefAST: i
+                NumExpAST: 3
+                NumExpAST: 2
+                NumExpAST: 5
+                InitValAST
+                    InitValAST
+                        { }
+    DeclAST
+        VarDeclAST
+            VarDefAST: k
+                NumExpAST: 2
+                NumExpAST: 4
+                NumExpAST: 5
+                InitValAST
+                    InitValAST
+                        NumExpAST: 1
+                    InitValAST
+                        NumExpAST: 1
+                    InitValAST
+                        NumExpAST: 1
+                    InitValAST
+                        NumExpAST: 1
+    DeclAST
+        ConstDeclAST
+            ConstDefAST: j
+                NumExpAST: 2
+                NumExpAST: 3
+                NumExpAST: 4
+                ConstInitValAST
+                    ConstInitValAST
+                        NumExpAST: 1
+                    ConstInitValAST
+                        NumExpAST: 2
+                    ConstInitValAST
+                        NumExpAST: 3
+                    ConstInitValAST
+                        NumExpAST: 4
+                    ConstInitValAST
+                        ConstInitValAST
+                            NumExpAST: 5
+                    ConstInitValAST
+                        ConstInitValAST
+                            {}
+    DeclAST
+        VarDeclAST
+            VarDefAST: l
+                NumExpAST: 2
+                NumExpAST: 3
+                InitValAST
+                    InitValAST
+                        InitValAST
+                            NumExpAST: 1
+                        InitValAST
+                            NumExpAST: 2
+                        InitValAST
+                            NumExpAST: 3
+                    InitValAST
+                        InitValAST
+                            { }
+    FuncDefAST: main
+        BlockAST
+            BlockItemAST
+                DeclAST
+                    VarDeclAST
+                        VarDefAST: t
+                            InitValAST
+                                NumExpAST: 1
+            BlockItemAST
+                DeclAST
+                    VarDeclAST
+                        VarDefAST: arr
+                            NumExpAST: 3
+                            NumExpAST: 2
+                            InitValAST
+                                InitValAST
+                                    InitValAST
+                                        NumExpAST: 1
+                                    InitValAST
+                                        NumExpAST: 2
+                                InitValAST
+                                    InitValAST
+                                        NumExpAST: 3
+                                    InitValAST
+                                        NumExpAST: 4
+                                InitValAST
+                                    InitValAST
+                                        NumExpAST: 5
+                                    InitValAST
+                                        NumExpAST: 6
+            BlockItemAST
+                DeclAST
+                    ConstDeclAST
+                        ConstDefAST: a
+                            NumExpAST: 4
+                            NumExpAST: 2
+                            ConstInitValAST
+                                ConstInitValAST
+                                    ConstInitValAST
+                                        NumExpAST: 1
+                                    ConstInitValAST
+                                        NumExpAST: 2
+                                ConstInitValAST
+                                    ConstInitValAST
+                                        NumExpAST: 3
+                                    ConstInitValAST
+                                        NumExpAST: 4
+                                ConstInitValAST
+                                    ConstInitValAST
+                                        {}
+                                ConstInitValAST
+                                    NumExpAST: 7
+            BlockItemAST
+                DeclAST
+                    ConstDeclAST
+                        ConstDefAST: xxx
+                            ConstInitValAST
+                                NumExpAST: 9
+            BlockItemAST
+                ExpStmtAST
+                    FuncCallAST: printf
+                    	format output: "%d\n"
+                        BinaryExpAST: +
+                            BinaryExpAST: +
+                                VarExpAST: c0
+                                    NumExpAST: 2
+                                VarExpAST: g0
+                                    NumExpAST: 3
+                            VarExpAST: scj82c9s0j
+            BlockItemAST
+                ReturnStmtAST
+                    BinaryExpAST: +
+                        VarExpAST: xxx
+                        VarExpAST: tt

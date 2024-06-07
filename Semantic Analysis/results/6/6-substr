@@ -1,0 +1,894 @@
+# include <stdio.h> -> ExternalDef
+ExternalDef -> CompUnit
+int a -> FuncFParam
+FuncFParam -> FuncFParams
+int b -> FuncFParam
+FuncFParams , FuncFParam -> FuncFParams
+a -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+b -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+EqExp == RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+a -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+a -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+b -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+RelExp > AddExp -> RelExp
+RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+a -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+b -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+if ( Cond ) Stmt else Stmt -> Stmt
+if ( Cond ) Stmt else Stmt -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+int MAX ( FuncFParams ) Block -> FuncDef
+CompUnit FuncDef -> CompUnit
+int arr [ ] -> FuncFParam
+FuncFParam -> FuncFParams
+int n -> FuncFParam
+FuncFParams , FuncFParam -> FuncFParams
+16 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+{ } -> InitVal
+temp Arrdef = InitVal -> VarDef
+VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockItem -> BlockGroup
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+, Exp -> FuncRParamsList
+Exp FuncRParamsList -> FuncRParams
+MAX ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+2 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+i = InitVal -> VarDef
+VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+n -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+RelExp < AddExp -> RelExp
+RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+2 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp - MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp - MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+, Exp -> FuncRParamsList
+Exp FuncRParamsList -> FuncRParams
+MAX ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+i -> LVal
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+while ( Cond ) Stmt -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+n -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp - MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+int max_sum_nonadjacent ( FuncFParams ) Block -> FuncDef
+CompUnit FuncDef -> CompUnit
+int arr1 [ ] -> FuncFParam
+FuncFParam -> FuncFParams
+int len1 -> FuncFParam
+FuncFParams , FuncFParam -> FuncFParams
+int arr2 [ ] -> FuncFParam
+FuncFParams , FuncFParam -> FuncFParams
+int len2 -> FuncFParam
+FuncFParams , FuncFParam -> FuncFParams
+16 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+16 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+ArrDef [ Exp ] -> ArrDef
+{ } -> InitVal
+p Arrdef = InitVal -> VarDef
+VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockItem -> BlockGroup
+i -> VarDef
+VarDef -> VarDefList
+j -> VarDef
+VarDef , VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+i -> LVal
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+len1 -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+RelExp <= AddExp -> RelExp
+RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+j -> LVal
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+len2 -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+RelExp <= AddExp -> RelExp
+RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp - MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp - MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+EqExp == RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+ArrDef [ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp - MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp - MulExp -> AddExp
+AddExp -> Exp
+ArrDef [ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+ArrDef [ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp - MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+ArrDef [ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp - MulExp -> AddExp
+AddExp -> Exp
+ArrDef [ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+, Exp -> FuncRParamsList
+Exp FuncRParamsList -> FuncRParams
+MAX ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+if ( Cond ) Stmt else Stmt -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+j -> LVal
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+while ( Cond ) Stmt -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+i -> LVal
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+while ( Cond ) Stmt -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+len1 -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+len2 -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+ArrDef [ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+int longest_common_subseq ( FuncFParams ) Block -> FuncDef
+CompUnit FuncDef -> CompUnit
+15 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+8 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitVal -> InitValList
+7 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+4 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+2 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+7 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+9 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+3 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+4 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+8 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+3 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+7 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+{ InitValList } -> InitVal
+A Arrdef = InitVal -> VarDef
+VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockItem -> BlockGroup
+13 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+3 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitVal -> InitValList
+9 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+7 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+4 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+2 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+4 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+3 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+6 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+8 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+5 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+{ InitValList } -> InitVal
+B Arrdef = InitVal -> VarDef
+VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+A -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+15 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+, Exp -> FuncRParamsList
+Exp FuncRParamsList -> FuncRParams
+max_sum_nonadjacent ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+, Exp -> FuncRParamsList
+"%d\n" FuncRParamsList -> FuncRParams
+printf ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+A -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+15 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+, Exp -> FuncRParamsList
+B -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+FuncRParamsList , Exp -> FuncRParamsList
+13 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+FuncRParamsList , Exp -> FuncRParamsList
+Exp FuncRParamsList -> FuncRParams
+longest_common_subseq ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+, Exp -> FuncRParamsList
+"%d\n" FuncRParamsList -> FuncRParams
+printf ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+int main ( ) Block -> FuncDef
+CompUnit FuncDef -> CompUnit

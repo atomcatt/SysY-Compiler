@@ -1,0 +1,13 @@
+# include <stdio.h> -> ExternalDef
+ExternalDef -> CompUnit
+3 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+int main ( ) Block -> FuncDef
+CompUnit FuncDef -> CompUnit

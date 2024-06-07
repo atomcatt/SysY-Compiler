@@ -1,0 +1,53 @@
+CompUnit :== Decl | FuncDef | ExternalDef | CompUnit Decl | CompUnit FuncDef | CompUnit ExternalDef
+ExternalDef :== # include HeaderFile
+Decl :== ConstDecl | VarDecl
+
+ConstDecl :== const int ConstDefList ;
+ConstExp :== AddExp # ConstExp的值是确定的
+ConstArrDef :== [ ConstExp ] | ConstArrDef [ ConstExp ]
+ConstDefList :== ConstDef | ConstDefList , ConstDef
+ConstDef :== Ident = ConstInitVal | Ident ConstArrDef = ConstInitVal
+ConstInitVal :== ConstExp | {} | { ConstInitValList }
+ConstInitValList :== ConstInitVal | ConstInitValList , ConstInitVal
+
+
+
+VarDecl :== int VarDefList ;
+VarDefList :== VarDef | VarDefist , VarDef
+VarDef :== Ident | Ident = InitVal | Ident ArrDef | Ident ArrDef = InitVal
+ArrDef :== [ Exp ] | ArrDef [ Exp ]
+InitVal :== Exp | {} | { InitValList }
+InitValList :== InitVal | InitValList , InitVal
+
+FuncDef :== void Ident ( ) Block | int Ident ( ) Block | void Ident ( FuncFParams ) Block | int Ident ( FuncFParams ) Block
+FuncFParams :== FuncFParam | FuncFParams , FuncFParam
+FuncFParam :== int Ident | int Ident [] | int Ident [] ArrDef
+
+Block :== {} | { BlockGroup }
+BlockGroup :== BlockItem | BlockGroup BlockItem
+BlockItem : Decl | Stmt
+
+Stmt :== ; | Exp ; | LVal = Exp ; 
+        | Block 
+        | if ( Cond ) Stmt | if ( Cond ) Stmt else Stmt
+        | while ( Cond ) Stmt
+        | break ;
+        | continue ;
+        | return ;
+        | return Exp ;
+
+LVal :== Ident | Ident ArrDef
+
+Cond :== LOrExp
+
+Exp :== AddExp
+PrimaryExp :== ( Exp ) | LVal | IntConst
+UnaryExp :== PrimaryExp | Ident ( ) | Ident ( FuncRParams ) | UnaryOp UnaryExp
+UnaryOp :== + | - | !
+FuncRParams :== Exp | Exp , FuncRParams | String , FuncRParams
+MulExp :== UnartExp | MulExp * UnaryExp | MulExp / UnaryExp | MulExp % UnaryExp
+AddExp :== MulExp | AddExp + MulExp | AddExp - MulExp
+RelExp :== AddExp | RelExp < AddExp | RelExp <= AddExp | RelExp > AddExp | RelExp >= AddExp
+EqExp :== RelExp | EqExp == RelExp | EqExp != RelExp
+LAndExp :== EqExp | LAndExp && EqExp
+LOrExp :== LAndExp | LOrExp || LAndExp

@@ -1,0 +1,715 @@
+Start
+CompUnitAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 3
+array_flatten
+array_flatten in InitValAST of monostate
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 4
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 4
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 2
+full_size in InitValList = 4
+fxxk
+fxxk
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 7
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 7
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 7
+full_size in InitValList = 7
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 2
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 2
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 2
+full_size in InitValList = 2
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 9
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 9
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 4
+full_size in InitValList = 9
+fxxk
+fxxk
+fxxk
+fxxk
+fxxk
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+array_flatten
+array_flatten in InitValAST of ExpAST
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 5
+dim_sizes 3
+array_flatten
+array_flatten in InitValAST of monostate
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 5
+dim_sizes 3
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 5
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 15
+full_size in InitValList = 15
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 5
+dim_sizes 3
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 5
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 3
+full_size in InitValList = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 3
+full_size in InitValList = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 3
+full_size in InitValList = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 3
+full_size in InitValList = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 3
+full_size in InitValList = 3
+values.size() in InitValList = 15
+full_size in InitValList = 15
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 5
+dim_sizes 3
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 5
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 3
+full_size in InitValList = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 3
+full_size in InitValList = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 3
+full_size in InitValList = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 15
+full_size in InitValList = 15
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 5
+dim_sizes 3
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 5
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 1
+full_size in InitValList = 3
+fxxk
+fxxk
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 3
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 1
+full_size in InitValList = 3
+fxxk
+fxxk
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 12
+full_size in InitValList = 15
+fxxk
+fxxk
+fxxk
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+NumExpAST::const_eval() start
+dim_sizes 2
+dim_sizes 3
+dim_sizes 4
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 2
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of InitValListAST
+dim_sizes.pop_front() = 4
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of ExpAST
+values.size() in InitValList = 1
+full_size in InitValList = 4
+fxxk
+fxxk
+fxxk
+recusive array_flatten
+array_flatten
+array_flatten in InitValAST of monostate
+values.size() in InitValList = 12
+full_size in InitValList = 24
+fxxk
+fxxk
+fxxk
+fxxk
+fxxk
+fxxk
+fxxk
+fxxk
+fxxk
+fxxk
+fxxk
+fxxk
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+InitValListAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+FuncDefAST::const_eval() start
+BlockAST::const_eval() start
+BlockItemAST::const_eval() start
+ExpStmtAST::const_eval() start
+BlockItemAST::const_eval() start
+ReturnStmtAST::const_eval() start
+in ret stmt

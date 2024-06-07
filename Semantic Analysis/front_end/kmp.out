@@ -1,0 +1,864 @@
+Start
+# include <stdio.h> -> ExternalDef
+ExternalDef -> CompUnit
+int str [ ] -> FuncFParam
+FuncFParam -> FuncFParams
+int next [ ] -> FuncFParam
+FuncFParams , FuncFParam -> FuncFParams
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+- -> UnaryOp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryOp UnaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+i = InitVal -> VarDef
+VarDef -> VarDefList
+- -> UnaryOp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryOp UnaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+j = InitVal -> VarDef
+VarDef , VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+- -> UnaryOp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryOp UnaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+EqExp == RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+EqExp == RelExp -> EqExp
+EqExp -> LAndExp
+LOrExp || LAndExp -> LOrExp
+LOrExp -> Cond
+j -> LVal
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+i -> LVal
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+j -> LVal
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+if ( Cond ) Stmt else Stmt -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+while ( Cond ) Stmt -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+void get_next ( FuncFParams ) Block -> FuncDef
+CompUnit FuncDef -> CompUnit
+int dst [ ] -> FuncFParam
+FuncFParam -> FuncFParams
+int src [ ] -> FuncFParam
+FuncFParams , FuncFParam -> FuncFParams
+4096 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+next ArrDef -> VarDef
+VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockItem -> BlockGroup
+dst -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+next -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> FuncRParams
+Exp , FuncRParams -> FuncRParams
+get_next ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+i = InitVal -> VarDef
+VarDef -> VarDefList
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+j = InitVal -> VarDef
+VarDef , VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+EqExp == RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+i -> LVal
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+j -> LVal
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+! -> UnaryOp
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryOp UnaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+if ( Cond ) Stmt -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+i -> LVal
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+- -> UnaryOp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryOp UnaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+EqExp == RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+i -> LVal
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+j -> LVal
+j -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+if ( Cond ) Stmt -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+if ( Cond ) Stmt else Stmt -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+while ( Cond ) Stmt -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+- -> UnaryOp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryOp UnaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+int KMP ( FuncFParams ) Block -> FuncDef
+CompUnit FuncDef -> CompUnit
+int buf [ ] -> FuncFParam
+FuncFParam -> FuncFParams
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+i = InitVal -> VarDef
+VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockItem -> BlockGroup
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> FuncRParams
+"%c" , FuncRParams -> FuncRParams
+scanf ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp ; -> Stmt
+Stmt -> BlockItem
+BlockItem -> BlockGroup
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+RelExp -> EqExp
+10 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> RelExp
+EqExp == RelExp -> EqExp
+EqExp -> LAndExp
+LAndExp -> LOrExp
+LOrExp -> Cond
+break ; -> Stmt
+if ( Cond ) Stmt -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+i -> LVal
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+AddExp + MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+Block -> Stmt
+while ( Cond ) Stmt -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+0 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+LVal = Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+i -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+int read_str ( FuncFParams ) Block -> FuncDef
+CompUnit FuncDef -> CompUnit
+4096 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+dst ArrDef -> VarDef
+VarDef -> VarDefList
+4096 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+src ArrDef -> VarDef
+VarDef , VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockItem -> BlockGroup
+dst -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> FuncRParams
+read_str ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+src -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> FuncRParams
+read_str ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+dst -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+src -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> FuncRParams
+Exp , FuncRParams -> FuncRParams
+KMP ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> FuncRParams
+"%d\n" , FuncRParams -> FuncRParams
+printf ( FuncRParams ) -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+8 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+return Exp ; -> Stmt
+Stmt -> BlockItem
+BlockGroup BlockItem -> BlockGroup
+{ BlockGroup } -> Block
+int main ( ) Block -> FuncDef
+CompUnit FuncDef -> CompUnit
+CompUnit -> Start
+CompUnitAST
+    ExternalDefAST: #include <stdio.h>
+    FuncDefAST: get_next
+        FuncFParamAST: 
+        BlockAST
+            BlockItemAST
+                AssignStmtAST
+                    LValAST: next
+                        NumExpAST: 0
+                    UnaryExpAST: -
+                        NumExpAST: 1
+            BlockItemAST
+                DeclAST
+                    VarDeclAST
+                        VarDefAST: i
+                            InitValAST
+                                NumExpAST: 0
+                        VarDefAST: j
+                            InitValAST
+                                UnaryExpAST: -
+                                    NumExpAST: 1
+            BlockItemAST
+                WhileStmtAST
+                    VarExpAST: str
+                        VarExpAST: i
+                    BlockStmtAST
+                        BlockItemAST
+                            IfStmtAST
+                                BinaryExpAST: ||
+                                    BinaryExpAST: ==
+                                        VarExpAST: j
+                                        UnaryExpAST: -
+                                            NumExpAST: 1
+                                    BinaryExpAST: ==
+                                        VarExpAST: str
+                                            VarExpAST: i
+                                        VarExpAST: str
+                                            VarExpAST: j
+                                BlockStmtAST
+                                    BlockItemAST
+                                        AssignStmtAST
+                                            LValAST: j
+                                            BinaryExpAST: +
+                                                VarExpAST: j
+                                                NumExpAST: 1
+                                    BlockItemAST
+                                        AssignStmtAST
+                                            LValAST: i
+                                            BinaryExpAST: +
+                                                VarExpAST: i
+                                                NumExpAST: 1
+                                    BlockItemAST
+                                        AssignStmtAST
+                                            LValAST: next
+                                                VarExpAST: i
+                                            VarExpAST: j
+                                AssignStmtAST
+                                    LValAST: j
+                                    VarExpAST: next
+                                        VarExpAST: j
+    FuncDefAST: KMP
+        FuncFParamAST: 
+        BlockAST
+            BlockItemAST
+                DeclAST
+                    VarDeclAST
+                        VarDefAST: next
+                            NumExpAST: 4096
+            BlockItemAST
+                ExpStmtAST
+                    FuncCallAST: get_next
+                        VarExpAST: next
+                        VarExpAST: dst
+            BlockItemAST
+                DeclAST
+                    VarDeclAST
+                        VarDefAST: i
+                            InitValAST
+                                NumExpAST: 0
+                        VarDefAST: j
+                            InitValAST
+                                NumExpAST: 0
+            BlockItemAST
+                WhileStmtAST
+                    VarExpAST: src
+                        VarExpAST: j
+                    BlockStmtAST
+                        BlockItemAST
+                            IfStmtAST
+                                BinaryExpAST: ==
+                                    VarExpAST: dst
+                                        VarExpAST: i
+                                    VarExpAST: src
+                                        VarExpAST: j
+                                BlockStmtAST
+                                    BlockItemAST
+                                        AssignStmtAST
+                                            LValAST: i
+                                            BinaryExpAST: +
+                                                VarExpAST: i
+                                                NumExpAST: 1
+                                    BlockItemAST
+                                        AssignStmtAST
+                                            LValAST: j
+                                            BinaryExpAST: +
+                                                VarExpAST: j
+                                                NumExpAST: 1
+                                    BlockItemAST
+                                        IfStmtAST
+                                            UnaryExpAST: !
+                                                VarExpAST: dst
+                                                    VarExpAST: i
+                                            BlockStmtAST
+                                                BlockItemAST
+                                                    ReturnStmtAST
+                                                        VarExpAST: j
+                                BlockStmtAST
+                                    BlockItemAST
+                                        AssignStmtAST
+                                            LValAST: i
+                                            VarExpAST: next
+                                                VarExpAST: i
+                                    BlockItemAST
+                                        IfStmtAST
+                                            BinaryExpAST: ==
+                                                VarExpAST: i
+                                                UnaryExpAST: -
+                                                    NumExpAST: 1
+                                            BlockStmtAST
+                                                BlockItemAST
+                                                    AssignStmtAST
+                                                        LValAST: i
+                                                        BinaryExpAST: +
+                                                            VarExpAST: i
+                                                            NumExpAST: 1
+                                                BlockItemAST
+                                                    AssignStmtAST
+                                                        LValAST: j
+                                                        BinaryExpAST: +
+                                                            VarExpAST: j
+                                                            NumExpAST: 1
+            BlockItemAST
+                ReturnStmtAST
+                    UnaryExpAST: -
+                        NumExpAST: 1
+    FuncDefAST: read_str
+        FuncFParamAST: 
+        BlockAST
+            BlockItemAST
+                DeclAST
+                    VarDeclAST
+                        VarDefAST: i
+                            InitValAST
+                                NumExpAST: 0
+            BlockItemAST
+                WhileStmtAST
+                    NumExpAST: 1
+                    BlockStmtAST
+                        BlockItemAST
+                            ExpStmtAST
+                                FuncCallAST: scanf
+                                    VarExpAST: buf
+                                        VarExpAST: i
+                        BlockItemAST
+                            IfStmtAST
+                                BinaryExpAST: ==
+                                    VarExpAST: buf
+                                        VarExpAST: i
+                                    NumExpAST: 10
+                                BreakStmtAST
+                        BlockItemAST
+                            AssignStmtAST
+                                LValAST: i
+                                BinaryExpAST: +
+                                    VarExpAST: i
+                                    NumExpAST: 1
+            BlockItemAST
+                AssignStmtAST
+                    LValAST: buf
+                        VarExpAST: i
+                    NumExpAST: 0
+            BlockItemAST
+                ReturnStmtAST
+                    VarExpAST: i
+    FuncDefAST: main
+        BlockAST
+            BlockItemAST
+                DeclAST
+                    VarDeclAST
+                        VarDefAST: dst
+                            NumExpAST: 4096
+                        VarDefAST: src
+                            NumExpAST: 4096
+            BlockItemAST
+                ExpStmtAST
+                    FuncCallAST: read_str
+                        VarExpAST: dst
+            BlockItemAST
+                ExpStmtAST
+                    FuncCallAST: read_str
+                        VarExpAST: src
+            BlockItemAST
+                ExpStmtAST
+                    FuncCallAST: printf
+                        FuncCallAST: KMP
+                            VarExpAST: src
+                            VarExpAST: dst
+            BlockItemAST
+                ReturnStmtAST
+                    NumExpAST: 8
+array_flatten
+array_flatten
+array_flatten
+array_flatten
+array_flatten

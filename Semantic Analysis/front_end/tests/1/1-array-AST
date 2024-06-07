@@ -1,0 +1,225 @@
+[0;1;32mTranslationUnitDecl[0m[0;33m 0x14a02c208[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a02d0b8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __int128_t[0m [0;32m'__int128'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02c7d0[0m [0;32m'__int128'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a02d128[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __uint128_t[0m [0;32m'unsigned __int128'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02c7f0[0m [0;32m'unsigned __int128'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fce30[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __NSConstantString[0m [0;32m'struct __NSConstantString_tag'[0m
+[0;34m| `-[0m[0;32mRecordType[0m[0;33m 0x14a0fcc00[0m [0;32m'struct __NSConstantString_tag'[0m
+[0;34m|   `-[0m[0;1;32mRecord[0m[0;33m 0x14a02d180[0m[0;1;36m '__NSConstantString_tag'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fce98[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVInt8_t[0m [0;32m'__SVInt8_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02c990[0m [0;32m'__SVInt8_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fcf00[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVInt16_t[0m [0;32m'__SVInt16_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02c9b0[0m [0;32m'__SVInt16_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fcf68[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVInt32_t[0m [0;32m'__SVInt32_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02c9d0[0m [0;32m'__SVInt32_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fcfd0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVInt64_t[0m [0;32m'__SVInt64_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02c9f0[0m [0;32m'__SVInt64_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd038[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVUint8_t[0m [0;32m'__SVUint8_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ca10[0m [0;32m'__SVUint8_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd0a0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVUint16_t[0m [0;32m'__SVUint16_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ca30[0m [0;32m'__SVUint16_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd108[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVUint32_t[0m [0;32m'__SVUint32_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ca50[0m [0;32m'__SVUint32_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd170[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVUint64_t[0m [0;32m'__SVUint64_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ca70[0m [0;32m'__SVUint64_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd1d8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVFloat16_t[0m [0;32m'__SVFloat16_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ca90[0m [0;32m'__SVFloat16_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd240[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVFloat32_t[0m [0;32m'__SVFloat32_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cab0[0m [0;32m'__SVFloat32_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd2a8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVFloat64_t[0m [0;32m'__SVFloat64_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cad0[0m [0;32m'__SVFloat64_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd310[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVBfloat16_t[0m [0;32m'__SVBfloat16_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02caf0[0m [0;32m'__SVBfloat16_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd378[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint8x2_t[0m [0;32m'__clang_svint8x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cb10[0m [0;32m'__clang_svint8x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd3e0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint16x2_t[0m [0;32m'__clang_svint16x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cb30[0m [0;32m'__clang_svint16x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd448[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint32x2_t[0m [0;32m'__clang_svint32x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cb50[0m [0;32m'__clang_svint32x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd4b0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint64x2_t[0m [0;32m'__clang_svint64x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cb70[0m [0;32m'__clang_svint64x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd518[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint8x2_t[0m [0;32m'__clang_svuint8x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cb90[0m [0;32m'__clang_svuint8x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd580[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint16x2_t[0m [0;32m'__clang_svuint16x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cbb0[0m [0;32m'__clang_svuint16x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd5e8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint32x2_t[0m [0;32m'__clang_svuint32x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cbd0[0m [0;32m'__clang_svuint32x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd650[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint64x2_t[0m [0;32m'__clang_svuint64x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cbf0[0m [0;32m'__clang_svuint64x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd6b8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svfloat16x2_t[0m [0;32m'__clang_svfloat16x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cc10[0m [0;32m'__clang_svfloat16x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd720[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svfloat32x2_t[0m [0;32m'__clang_svfloat32x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cc30[0m [0;32m'__clang_svfloat32x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd788[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svfloat64x2_t[0m [0;32m'__clang_svfloat64x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cc50[0m [0;32m'__clang_svfloat64x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd7f0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svbfloat16x2_t[0m [0;32m'__clang_svbfloat16x2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cc70[0m [0;32m'__clang_svbfloat16x2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd858[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint8x3_t[0m [0;32m'__clang_svint8x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cc90[0m [0;32m'__clang_svint8x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd8c0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint16x3_t[0m [0;32m'__clang_svint16x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ccb0[0m [0;32m'__clang_svint16x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd928[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint32x3_t[0m [0;32m'__clang_svint32x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ccd0[0m [0;32m'__clang_svint32x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd990[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint64x3_t[0m [0;32m'__clang_svint64x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ccf0[0m [0;32m'__clang_svint64x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fd9f8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint8x3_t[0m [0;32m'__clang_svuint8x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cd10[0m [0;32m'__clang_svuint8x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fda60[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint16x3_t[0m [0;32m'__clang_svuint16x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cd30[0m [0;32m'__clang_svuint16x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fdac8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint32x3_t[0m [0;32m'__clang_svuint32x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cd50[0m [0;32m'__clang_svuint32x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fdb30[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint64x3_t[0m [0;32m'__clang_svuint64x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cd70[0m [0;32m'__clang_svuint64x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fdb98[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svfloat16x3_t[0m [0;32m'__clang_svfloat16x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cd90[0m [0;32m'__clang_svfloat16x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe400[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svfloat32x3_t[0m [0;32m'__clang_svfloat32x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cdb0[0m [0;32m'__clang_svfloat32x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe468[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svfloat64x3_t[0m [0;32m'__clang_svfloat64x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cdd0[0m [0;32m'__clang_svfloat64x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe4d0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svbfloat16x3_t[0m [0;32m'__clang_svbfloat16x3_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cdf0[0m [0;32m'__clang_svbfloat16x3_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe538[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint8x4_t[0m [0;32m'__clang_svint8x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ce10[0m [0;32m'__clang_svint8x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe5a0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint16x4_t[0m [0;32m'__clang_svint16x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ce30[0m [0;32m'__clang_svint16x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe608[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint32x4_t[0m [0;32m'__clang_svint32x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ce50[0m [0;32m'__clang_svint32x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe670[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svint64x4_t[0m [0;32m'__clang_svint64x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ce70[0m [0;32m'__clang_svint64x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe6d8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint8x4_t[0m [0;32m'__clang_svuint8x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ce90[0m [0;32m'__clang_svuint8x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe740[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint16x4_t[0m [0;32m'__clang_svuint16x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ceb0[0m [0;32m'__clang_svuint16x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe7a8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint32x4_t[0m [0;32m'__clang_svuint32x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02ced0[0m [0;32m'__clang_svuint32x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe810[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svuint64x4_t[0m [0;32m'__clang_svuint64x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cef0[0m [0;32m'__clang_svuint64x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe878[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svfloat16x4_t[0m [0;32m'__clang_svfloat16x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cf10[0m [0;32m'__clang_svfloat16x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe8e0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svfloat32x4_t[0m [0;32m'__clang_svfloat32x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cf30[0m [0;32m'__clang_svfloat32x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe948[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svfloat64x4_t[0m [0;32m'__clang_svfloat64x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cf50[0m [0;32m'__clang_svfloat64x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fe9b0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svbfloat16x4_t[0m [0;32m'__clang_svbfloat16x4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cf70[0m [0;32m'__clang_svbfloat16x4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fea18[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVBool_t[0m [0;32m'__SVBool_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cf90[0m [0;32m'__SVBool_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fea80[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svboolx2_t[0m [0;32m'__clang_svboolx2_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cfb0[0m [0;32m'__clang_svboolx2_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0feae8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __clang_svboolx4_t[0m [0;32m'__clang_svboolx4_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cfd0[0m [0;32m'__clang_svboolx4_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0feb50[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __SVCount_t[0m [0;32m'__SVCount_t'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02cff0[0m [0;32m'__SVCount_t'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0febf8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __builtin_ms_va_list[0m [0;32m'char *'[0m
+[0;34m| `-[0m[0;32mPointerType[0m[0;33m 0x14a0febb0[0m [0;32m'char *'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02c2b0[0m [0;32m'char'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x14a0fec68[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __builtin_va_list[0m [0;32m'char *'[0m
+[0;34m| `-[0m[0;32mPointerType[0m[0;33m 0x14a0febb0[0m [0;32m'char *'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x14a02c2b0[0m [0;32m'char'[0m
+[0;34m|-[0m[0;1;32mFunctionDecl[0m[0;33m 0x14a0feec8[0m <[0;33m./1-array.c:3:1[0m, [0;33mline:6:1[0m> [0;33mline:3:5[0m[0;1;36m func[0m [0;32m'int (int, int, int)'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x14a0fecd8[0m <[0;33mcol:10[0m, [0;33mcol:14[0m> [0;33mcol:14[0m[0;1;36m x[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x14a0fed58[0m <[0;33mcol:17[0m, [0;33mcol:21[0m> [0;33mcol:21[0m[0;1;36m y[0m [0;32m'int'[0m
+[0;34m| |-[0m[0;1;32mParmVarDecl[0m[0;33m 0x14a0fedd8[0m <[0;33mcol:24[0m, [0;33mcol:28[0m> [0;33mcol:28[0m used[0;1;36m z[0m [0;32m'int'[0m
+[0;34m| `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x14a0ff018[0m <[0;33mline:4:1[0m, [0;33mline:6:1[0m>
+[0;34m|   `-[0m[0;1;35mReturnStmt[0m[0;33m 0x14a0ff008[0m <[0;33mline:5:5[0m, [0;33mcol:12[0m>
+[0;34m|     `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x14a0feff0[0m <[0;33mcol:12[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m|       `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x14a0fefd0[0m <[0;33mcol:12[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mParmVar[0m[0;33m 0x14a0fedd8[0m[0;1;36m 'z'[0m [0;32m'int'[0m
+[0;34m`-[0m[0;1;32mFunctionDecl[0m[0;33m 0x14a0ff088[0m <[0;33mline:8:1[0m, [0;33mline:18:1[0m> [0;33mline:8:5[0m[0;1;36m main[0m [0;32m'int ()'[0m
+[0;34m  `-[0m[0;1;35mCompoundStmt[0m[0;33m 0x14901af88[0m <[0;33mline:9:1[0m, [0;33mline:18:1[0m>
+[0;34m    |-[0m[0;1;35mDeclStmt[0m[0;33m 0x149019528[0m <[0;33mline:10:5[0m, [0;33mcol:48[0m>
+[0;34m    | `-[0m[0;1;32mVarDecl[0m[0;33m 0x14a0ff2e8[0m <[0;33mcol:5[0m, [0;33mcol:47[0m> [0;33mcol:15[0m used[0;1;36m a[0m [0;32m'const int[4][2]'[0m cinit
+[0;34m    |   `-[0m[0;1;35mInitListExpr[0m[0;33m 0x149019360[0m <[0;33mcol:25[0m, [0;33mcol:47[0m> [0;32m'const int[4][2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x1490193d0[0m <[0;33mcol:26[0m, [0;33mcol:31[0m> [0;32m'const int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14a0ff350[0m <[0;33mcol:27[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m    |     | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14a0ff370[0m <[0;33mcol:30[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 2[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x149019430[0m <[0;33mcol:34[0m, [0;33mcol:39[0m> [0;32m'const int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14a0ff3e0[0m <[0;33mcol:35[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 3[0m
+[0;34m    |     | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019200[0m <[0;33mcol:38[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 4[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x149019480[0m <[0;33mcol:42[0m, [0;33mcol:43[0m> [0;32m'const int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | `-array_filler: [0m[0;1;35mImplicitValueInitExpr[0m[0;33m 0x1490194c0[0m <[0;33m<invalid sloc>[0m> [0;32m'const int'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     `-[0m[0;1;35mInitListExpr[0m[0;33m 0x1490194d0[0m <[0;33mcol:46[0m> [0;32m'const int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |       |-array_filler: [0m[0;1;35mImplicitValueInitExpr[0m[0;33m 0x149019518[0m <[0;33m<invalid sloc>[0m> [0;32m'const int'[0m[0;36m[0m[0;36m[0m
+[0;34m    |       `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x1490192b0[0m <[0;33mcol:46[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 7[0m
+[0;34m    |-[0m[0;1;35mDeclStmt[0m[0;33m 0x1490195e0[0m <[0;33mline:11:5[0m, [0;33mcol:20[0m>
+[0;34m    | `-[0m[0;1;32mVarDecl[0m[0;33m 0x149019558[0m <[0;33mcol:5[0m, [0;33mcol:19[0m> [0;33mcol:15[0m used[0;1;36m N[0m [0;32m'const int'[0m cinit
+[0;34m    |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x1490195c0[0m <[0;33mcol:19[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 3[0m
+[0;34m    |-[0m[0;1;35mDeclStmt[0m[0;33m 0x1490197a8[0m <[0;33mline:12:5[0m, [0;33mcol:21[0m>
+[0;34m    | `-[0m[0;1;32mVarDecl[0m[0;33m 0x1490196b0[0m <[0;33mcol:5[0m, [0;33mcol:20[0m> [0;33mcol:9[0m[0;1;36m b[0m [0;32m'int[4][2]'[0m cinit
+[0;34m    |   `-[0m[0;1;35mInitListExpr[0m[0;33m 0x149019758[0m <[0;33mcol:19[0m, [0;33mcol:20[0m> [0;32m'int[4][2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     `-array_filler: [0m[0;1;35mImplicitValueInitExpr[0m[0;33m 0x149019798[0m <[0;33m<invalid sloc>[0m> [0;32m'int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |-[0m[0;1;35mDeclStmt[0m[0;33m 0x149019c10[0m <[0;33mline:13:5[0m, [0;33mcol:43[0m>
+[0;34m    | `-[0m[0;1;32mVarDecl[0m[0;33m 0x149019878[0m <[0;33mcol:5[0m, [0;33mcol:42[0m> [0;33mcol:9[0m used[0;1;36m c[0m [0;32m'int[4][2]'[0m cinit
+[0;34m    |   `-[0m[0;1;35mInitListExpr[0m[0;33m 0x149019a70[0m <[0;33mcol:19[0m, [0;33mcol:42[0m> [0;32m'int[4][2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x149019ad0[0m <[0;33mcol:20[0m, [0;33mcol:23[0m> [0;32m'int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x1490198e0[0m <[0;33mcol:20[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m    |     | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019900[0m <[0;33mcol:23[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 2[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x149019b20[0m <[0;33mcol:26[0m, [0;33mcol:29[0m> [0;32m'int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019920[0m <[0;33mcol:26[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 3[0m
+[0;34m    |     | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019940[0m <[0;33mcol:29[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 4[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x149019b70[0m <[0;33mcol:32[0m, [0;33mcol:35[0m> [0;32m'int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019960[0m <[0;33mcol:32[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 5[0m
+[0;34m    |     | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019980[0m <[0;33mcol:35[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 6[0m
+[0;34m    |     `-[0m[0;1;35mInitListExpr[0m[0;33m 0x149019bc0[0m <[0;33mcol:38[0m, [0;33mcol:41[0m> [0;32m'int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |       |-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x1490199a0[0m <[0;33mcol:38[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 7[0m
+[0;34m    |       `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x1490199c0[0m <[0;33mcol:41[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 8[0m
+[0;34m    |-[0m[0;1;35mDeclStmt[0m[0;33m 0x14901a388[0m <[0;33mline:14:5[0m, [0;33mcol:51[0m>
+[0;34m    | `-[0m[0;1;32mVarDecl[0m[0;33m 0x149019e10[0m <[0;33mcol:5[0m, [0;33mcol:50[0m> [0;33mcol:9[0m used[0;1;36m d[0m [0;32m'int[4][2]'[0m cinit
+[0;34m    |   `-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901a180[0m <[0;33mcol:23[0m, [0;33mcol:50[0m> [0;32m'int[4][2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901a200[0m <[0;33mcol:24[0m, [0;33mcol:27[0m> [0;32m'int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019e78[0m <[0;33mcol:24[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m    |     | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019e98[0m <[0;33mcol:27[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 2[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901a260[0m <[0;33mcol:30[0m, [0;33mcol:32[0m> [0;32m'int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-array_filler: [0m[0;1;35mImplicitValueInitExpr[0m[0;33m 0x14901a2a8[0m <[0;33m<invalid sloc>[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019eb8[0m <[0;33mcol:31[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 3[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901a2c8[0m <[0;33mcol:35[0m, [0;33mcol:37[0m> [0;32m'int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-array_filler: [0m[0;1;35mImplicitValueInitExpr[0m[0;33m 0x14901a310[0m <[0;33m<invalid sloc>[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019f20[0m <[0;33mcol:36[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 5[0m
+[0;34m    |     `-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901a320[0m <[0;33mcol:40[0m, [0;33mcol:49[0m> [0;32m'int[2]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |       |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x14901a370[0m <[0;33mcol:40[0m, [0;33mcol:46[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m    |       | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x14901a0a0[0m <[0;33mcol:40[0m, [0;33mcol:46[0m> [0;32m'const int'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m    |       |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x14901a088[0m <[0;33mcol:40[0m, [0;33mcol:43[0m> [0;32m'const int *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m    |       |   | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x14901a048[0m <[0;33mcol:40[0m, [0;33mcol:43[0m> [0;32m'const int[2]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m    |       |   |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x14901a030[0m <[0;33mcol:40[0m> [0;32m'const int (*)[2]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m    |       |   |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x149019f88[0m <[0;33mcol:40[0m> [0;32m'const int[4][2]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x14a0ff2e8[0m[0;1;36m 'a'[0m [0;32m'const int[4][2]'[0m
+[0;34m    |       |   |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x149019fa8[0m <[0;33mcol:42[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 3[0m
+[0;34m    |       |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a068[0m <[0;33mcol:45[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m
+[0;34m    |       `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a0c0[0m <[0;33mcol:49[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 8[0m
+[0;34m    |-[0m[0;1;35mDeclStmt[0m[0;33m 0x14901af40[0m <[0;33mline:15:5[0m, [0;33mcol:68[0m>
+[0;34m    | `-[0m[0;1;32mVarDecl[0m[0;33m 0x14901a568[0m <[0;33mcol:5[0m, [0;33mcol:67[0m> [0;33mcol:9[0m[0;1;36m e[0m [0;32m'int[4][2][1]'[0m cinit
+[0;34m    |   `-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901aad0[0m <[0;33mcol:22[0m, [0;33mcol:67[0m> [0;32m'int[4][2][1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901ab50[0m <[0;33mcol:23[0m, [0;33mcol:42[0m> [0;32m'int[2][1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901aba0[0m <[0;33mcol:24[0m, [0;33mcol:30[0m> [0;32m'int[1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | | `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x14901abe8[0m <[0;33mcol:24[0m, [0;33mcol:30[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m    |     | |   `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x14901a6e8[0m <[0;33mcol:24[0m, [0;33mcol:30[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m    |     | |     |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x14901a6d0[0m <[0;33mcol:24[0m, [0;33mcol:27[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m    |     | |     | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x14901a658[0m <[0;33mcol:24[0m, [0;33mcol:27[0m> [0;32m'int[2]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m    |     | |     |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x14901a640[0m <[0;33mcol:24[0m> [0;32m'int (*)[2]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m    |     | |     |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x14901a5d0[0m <[0;33mcol:24[0m> [0;32m'int[4][2]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x149019e10[0m[0;1;36m 'd'[0m [0;32m'int[4][2]'[0m
+[0;34m    |     | |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a5f0[0m <[0;33mcol:26[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 2[0m
+[0;34m    |     | |     `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a678[0m <[0;33mcol:29[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m    |     | `-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901ac10[0m <[0;33mcol:33[0m, [0;33mcol:41[0m> [0;32m'int[1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     |   `-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x14901ac58[0m <[0;33mcol:34[0m, [0;33mcol:40[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m <[0;31mLValueToRValue[0m>
+[0;34m    |     |     `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x14901a7b8[0m <[0;33mcol:34[0m, [0;33mcol:40[0m> [0;32m'int'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m    |     |       |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x14901a7a0[0m <[0;33mcol:34[0m, [0;33mcol:37[0m> [0;32m'int *'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m    |     |       | `-[0m[0;1;35mArraySubscriptExpr[0m[0;33m 0x14901a760[0m <[0;33mcol:34[0m, [0;33mcol:37[0m> [0;32m'int[2]'[0m[0;36m lvalue[0m[0;36m[0m
+[0;34m    |     |       |   |-[0m[0;1;35mImplicitCastExpr[0m[0;33m 0x14901a748[0m <[0;33mcol:34[0m> [0;32m'int (*)[2]'[0m[0;36m[0m[0;36m[0m <[0;31mArrayToPointerDecay[0m>
+[0;34m    |     |       |   | `-[0m[0;1;35mDeclRefExpr[0m[0;33m 0x14901a708[0m <[0;33mcol:34[0m> [0;32m'int[4][2]'[0m[0;36m lvalue[0m[0;36m[0m [0;1;32mVar[0m[0;33m 0x149019878[0m[0;1;36m 'c'[0m [0;32m'int[4][2]'[0m
+[0;34m    |     |       |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a728[0m <[0;33mcol:36[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 2[0m
+[0;34m    |     |       `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a780[0m <[0;33mcol:39[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 1[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901ac80[0m <[0;33mcol:45[0m, [0;33mcol:50[0m> [0;32m'int[2][1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901acd0[0m <[0;33mcol:46[0m> [0;32m'int[1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a870[0m <[0;33mcol:46[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 3[0m
+[0;34m    |     | `-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901ad18[0m <[0;33mcol:49[0m> [0;32m'int[1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a890[0m <[0;33mcol:49[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 4[0m
+[0;34m    |     |-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901ad70[0m <[0;33mcol:53[0m, [0;33mcol:58[0m> [0;32m'int[2][1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | |-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901adc0[0m <[0;33mcol:54[0m> [0;32m'int[1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     | | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a900[0m <[0;33mcol:54[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 5[0m
+[0;34m    |     | `-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901ae08[0m <[0;33mcol:57[0m> [0;32m'int[1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |     |   `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a920[0m <[0;33mcol:57[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 6[0m
+[0;34m    |     `-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901ae60[0m <[0;33mcol:61[0m, [0;33mcol:66[0m> [0;32m'int[2][1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |       |-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901aeb0[0m <[0;33mcol:62[0m> [0;32m'int[1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |       | `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a990[0m <[0;33mcol:62[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 7[0m
+[0;34m    |       `-[0m[0;1;35mInitListExpr[0m[0;33m 0x14901aef8[0m <[0;33mcol:65[0m> [0;32m'int[1]'[0m[0;36m[0m[0;36m[0m
+[0;34m    |         `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901a9b0[0m <[0;33mcol:65[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 8[0m
+[0;34m    `-[0m[0;1;35mReturnStmt[0m[0;33m 0x14901af78[0m <[0;33mline:17:5[0m, [0;33mcol:12[0m>
+[0;34m      `-[0m[0;1;35mIntegerLiteral[0m[0;33m 0x14901af58[0m <[0;33mcol:12[0m> [0;32m'int'[0m[0;36m[0m[0;36m[0m[0;1;36m 0[0m

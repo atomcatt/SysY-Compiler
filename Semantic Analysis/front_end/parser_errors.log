@@ -1,0 +1,5 @@
+Error processing ./tests/1/1-array.c
+Error processing ./tests/5/5-kmp.c
+Error processing ./tests/6/6-substr.c
+Error processing ./tests/8/8-long_array.c
+Error processing ./tests/9/9-many_params.c

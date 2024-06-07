@@ -1,0 +1,27 @@
+digraph " "{node [shape = record,height=.1]node0[label="<f0> CompUnit"]node1[label = "<f0> CompUnit|<f1> FuncDef"];
+"node0":f0->"node1";
+node2[label = "<f0> int|<f1> main|<f2> \(|<f3> \)|<f4> Block"];
+"node1":f1->"node2";
+node3[label = "<f0> \{|<f1> BlockGroup|<f2> \}"];
+"node2":f4->"node3";
+node5[label = "<f0> BlockItem"];
+"node3":f1->"node5";
+node6[label = "<f0> Stmt"];
+"node5":f0->"node6";
+node7[label = "<f0> return|<f1> Exp|<f2> \;"];
+"node6":f0->"node7";
+node9[label = "<f0> AddExp"];
+"node7":f1->"node9";
+node10[label = "<f0> MulExp"];
+"node9":f0->"node10";
+node11[label = "<f0> UnaryExp"];
+"node10":f0->"node11";
+node12[label = "<f0> PrimaryExp"];
+"node11":f0->"node12";
+node13[label = "<f0> 3"];
+"node12":f0->"node13";
+node21[label = "<f0> ExternalDef"];
+"node1":f0->"node21";
+node22[label = "<f0> #|<f1> include|<f2> <stdio.h>"];
+"node21":f0->"node22";
+}

@@ -274,18 +274,49 @@ main:
 	pushq	%rbp
 	movq	%rsp, %rbp
 	movl	$1, -4(%rbp)
-	movl	$1, -24(%rbp)
-	movl	$2, -20(%rbp)
-	movl	$3, -16(%rbp)
-	movl	$4, -12(%rbp)
-	movl	$5, -8(%rbp)
-	movl	$6, -4(%rbp)
-	movl	$9, -28(%rbp)
+	movl	$1, -28(%rbp)
+	movl	$2, -24(%rbp)
+	movl	$3, -20(%rbp)
+	movl	$4, -16(%rbp)
+	movl	$5, -12(%rbp)
+	movl	$6, -8(%rbp)
+	movl	$2, -32(%rbp)
+	movl	$1, -36(%rbp)
+	movl	$1, %r10d
+	movl	%r10d, %r8d
+	movl	$0, %r11d
+	movl	-32(%rbp), %r10d
+	imull	$2, %r11d
+	addl	%r10d, %r11d
+	movl	-36(%rbp), %r10d
+	addl	%r10d, %r11d
+	leaq	-28(%rbp), %rsi
+	shll	$2, %r11d
+	cltq
+	addq	%rsi, %r11
+	movl	(%rsi), %r10d
+	movl	%r10d, %r9d
+	addl	%r9d, %r8d
+	movl	%r8d, -44(%rbp)
+	movl	%r10d, -44(%rbp)
+	movl	$0, %r11d
+	movl	-32(%rbp), %r10d
+	imull	$2, %r11d
+	addl	%r10d, %r11d
+	movl	-36(%rbp), %r10d
+	addl	%r10d, %r11d
+	leaq	-28(%rbp), %rsi
+	shll	$2, %r11d
+	cltq
+	addq	%rsi, %r11
+	movl	(%rsi), %r10d
+	movl	%r10d, -48(%rbp)
+	movl	$9, -52(%rbp)
 	movl	$9, %r10d
 	movl	%r10d, %r8d
 	movl	tt(%rip), %r10d
 	movl	%r10d, %r9d
 	addl	%r9d, %r8d
-	movl	%r8d, %eax
+	movl	%r8d, -56(%rbp)
 	leave
 	ret

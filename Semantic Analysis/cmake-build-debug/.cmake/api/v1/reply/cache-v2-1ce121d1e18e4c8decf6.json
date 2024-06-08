@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis/cmake-build-debug"
+			"value" : "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis"
+			"value" : "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis/cmake-build-debug"
+			"value" : "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis/cmake-build-debug"
 		},
 		{
 			"name" : "compiler_IS_TOP_LEVEL",
@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis"
+			"value" : "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis"
 		}
 	],
 	"kind" : "cache",

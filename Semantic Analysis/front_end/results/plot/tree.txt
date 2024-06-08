@@ -311,6 +311,36 @@ CompUnitAST
                                     NumExpAST: 7
             BlockItemAST
                 DeclAST
+                    VarDeclAST
+                        VarDefAST: i
+                            InitValAST
+                                NumExpAST: 2
+            BlockItemAST
+                DeclAST
+                    VarDeclAST
+                        VarDefAST: j
+                            InitValAST
+                                NumExpAST: 1
+            BlockItemAST
+                DeclAST
+                    VarDeclAST
+                        VarDefAST: n
+                            InitValAST
+                                BinaryExpAST: +
+                                    NumExpAST: 1
+                                    VarExpAST: arr
+                                        VarExpAST: i
+                                        VarExpAST: j
+            BlockItemAST
+                DeclAST
+                    VarDeclAST
+                        VarDefAST: m
+                            InitValAST
+                                VarExpAST: arr
+                                    VarExpAST: i
+                                    VarExpAST: j
+            BlockItemAST
+                DeclAST
                     ConstDeclAST
                         ConstDefAST: xxx
                             ConstInitValAST

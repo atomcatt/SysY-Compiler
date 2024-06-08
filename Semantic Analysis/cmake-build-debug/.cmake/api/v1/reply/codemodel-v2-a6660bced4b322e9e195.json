@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "compiler::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-compiler-Debug-2e0fc8f6330933bbccde.json",
+					"jsonFile" : "target-compiler-Debug-ff41e769cb0e2a11c3e3.json",
 					"name" : "compiler",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis/cmake-build-debug",
-		"source" : "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis"
+		"build" : "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis/cmake-build-debug",
+		"source" : "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis"
 	},
 	"version" : 
 	{

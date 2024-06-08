@@ -1163,8 +1163,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis/cmake-build-debug",
-		"source" : "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis"
+		"build" : "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis/cmake-build-debug",
+		"source" : "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis"
 	},
 	"version" : 
 	{

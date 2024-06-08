@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis" -B "/Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis/cmake-build-debug"
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis" -B "/Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis/cmake-build-debug"
 -- The C compiler identification is AppleClang 15.0.0.15000100
 -- The CXX compiler identification is AppleClang 15.0.0.15000100
 -- Detecting C compiler ABI info
@@ -11,6 +11,6 @@
 -- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (1.0s)
+-- Configuring done (7.5s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/zhangjinkai/Desktop/CS/C_CPP_Files/compiler/Semantic Analysis/cmake-build-debug
+-- Build files have been written to: /Users/zhangjinkai/Documents/SysY-Compiler/Semantic Analysis/cmake-build-debug

@@ -1225,6 +1225,44 @@ ConstInitValAST::const_eval() start
 NumExpAST::const_eval() start
 BlockItemAST::const_eval() start
 DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+array_flatten
+array_flatten in InitValAST of ExpAST
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+BlockItemAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+array_flatten
+array_flatten in InitValAST of ExpAST
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+NumExpAST::const_eval() start
+BlockItemAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+array_flatten
+array_flatten in InitValAST of ExpAST
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+BinaryExpAST::const_eval() start
+NumExpAST::const_eval() start
+VarExpAST::const_eval() start
+BlockItemAST::const_eval() start
+DeclAST::const_eval() start
+VarDeclAST::const_eval() start
+array_flatten
+array_flatten in InitValAST of ExpAST
+array_flatten done
+array_format done
+InitValAST::const_eval() start
+VarExpAST::const_eval() start
+BlockItemAST::const_eval() start
+DeclAST::const_eval() start
 ConstDeclAST::const_eval() start
 const_def->ident: xxx
 array_flatten

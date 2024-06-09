@@ -89,6 +89,7 @@ public:
 struct ExpAST : public BaseAST {
 public:
     int offset;
+    bool is_pointer = false;
     ExpAST() {}
 };
 

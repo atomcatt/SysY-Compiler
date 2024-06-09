@@ -305,7 +305,7 @@ void AssignStmtAST::code_gen() {
 }
 
 void ExpStmtAST::code_gen() {
-
+    exp->code_gen();
 }
 
 void BlockStmtAST::code_gen() {
@@ -351,6 +351,7 @@ void ReturnStmtAST::code_gen() {
                     // text.append("\tmovl\t%d(%%rbp), %%eax\n", symbol_table.lookup(dynamic_cast<VarExpAST*>(exp)->ident)->offset);
                 }
             } else {
+                 /* TODO: 一样的问题，VarExpAST的维度不一定是字面值常量 明天再修吧 */
                 int bias = 0;
                 Symbol *array = symbol_table.try_lookup(dynamic_cast<VarExpAST*>(exp)->ident);
                 int dim_size = dynamic_cast<VarExpAST*>(exp)->dim.size();
@@ -434,13 +435,40 @@ void FuncCallAST::code_gen() {
         text.append("\tleaq\t.format_string%d(%%rip), %s\n", compile_state.get_format_string_count(format_output), param_regs[0].c_str());  
         for (int i = 0; i < r_args.size(); i++) {
             /* TODO */
+            compile_state.update_offset(-4);
+
         }
         text.append("\tcall\tscanf\n");
     } else {
-        for (int i = 0; i < r_args.size(); i++) {
-            /* TODO */
-            if (dynamic_cast<NumExpAST*>(r_args[i])) {
-
+        if (r_args.empty()) {
+            text.append("\tmovl\t$0, %%eax\n");
+            text.append("\tcall\t%s\n", ident.c_str());
+        } else {
+            int arg_size = (int)r_args.size();
+            compile_state.update_offset(-8 * arg_size);
+            for (int i = arg_size - 1; i >= 0; i--) {
+                /* TODO */
+//                compile_state.update_offset(-4);
+                if (dynamic_cast<NumExpAST *>(r_args[i])) {
+                    text.append("\tmovl\t$%d, %d(%%rbp)\n", dynamic_cast<NumExpAST *>(r_args[i])->value,
+                                compile_state.get_offset());
+                } else if (dynamic_cast<VarExpAST *>(r_args[i])) {
+                    dynamic_cast<VarExpAST *>(r_args[i])->code_gen();
+                    if (dynamic_cast<VarExpAST *>(r_args[i])->is_pointer) {
+                        text.append("\tmovq\t%%r10, %d(%%rbp)\n", compile_state.get_offset() + i * 8);
+                    } else {
+                        text.append("\tmovl\t%%r10d, %d(%%rbp)\n", compile_state.get_offset() + i * 8);
+                    }
+                } else if (dynamic_cast<BinaryExpAST *>(r_args[i])) {
+                    dynamic_cast<BinaryExpAST *>(r_args[i])->code_gen();
+                    text.append("\tmovl\t%%r10d, %d(%%rbp)\n", compile_state.get_offset() + i * 8);
+                } else if (dynamic_cast<UnaryExpAST *>(r_args[i])) {
+                    dynamic_cast<UnaryExpAST *>(r_args[i])->code_gen();
+                    text.append("\tmovl\t%%r10d, %d(%%rbp)\n", compile_state.get_offset() + i * 8);
+                } else if (dynamic_cast<FuncCallAST *>(r_args[i])) {
+                    dynamic_cast<FuncCallAST *>(r_args[i])->code_gen();
+                    text.append("\tmovl\t%%eax, %d(%%rbp)\n", compile_state.get_offset() + i * 8);
+                }
             }
         }
         text.append("\tcall\t%s\n", ident.c_str());
@@ -592,25 +620,68 @@ void NumExpAST::code_gen() {
 void VarExpAST::code_gen() {
     if (dim.empty()) {
         Symbol *var = symbol_table.try_lookup(ident);
-        if (var->type == SymbolType::CONST_INT) {
-            text.append("\tmovl\t$%d, %%r10d\n", var->const_value);
-        } else if (var->type == SymbolType::INTCONST) {
-            if (var->level == 1) {
-                text.append("\tmovl\t%s(%%rip), %%r10d\n", ident.c_str());
+        if (var->is_array) {
+            if (is_pointer) {
+                if (var->type == SymbolType::CONST_ARRAY) {
+                    // 没有这种抽象的东西吧
+                    throw std::runtime_error("Error: couldn't get the address of a const array");
+                } else {
+                    // 这种也不会有吧
+                    throw std::runtime_error("Error: couldn't get the address of a normal array");
+                }
             } else {
-                text.append("\tmovl\t%d(%%rbp), %%r10d\n", var->offset);
+                is_pointer = true;
+                if (var->type == SymbolType::CONST_ARRAY) {
+                    text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
+                    text.append("\tmovq\t%%rsi, %%r10\n");
+                } else {
+                    if (var->level == 1) {
+                        text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
+                        text.append("\tmovq\t%%rsi, %%r10\n");
+                    } else {
+                        text.append("\tleaq\t%d(%%rbp), %%rsi\n", var->offset);
+                        text.append("\tmovq\t%%rsi, %%r10\n");
+                    }
+                }
+            }
+        } else {
+            if (is_pointer) {
+                if (var->type == SymbolType::CONST_INT) {
+                    text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
+                    text.append("\tmovq\t%%rsi, %%r10\n");
+                } else {
+                    if (var->level == 1) {
+                        text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
+                        text.append("\tmovq\t%%rsi, %%r10\n");
+                    } else {
+                        text.append("\tleaq\t%d(%%rbp), %%rsi\n", var->offset);
+                        text.append("\tmovq\t%%rsi, %%r10\n");
+                    }
+                }
+            } else {
+                if (var->type == SymbolType::CONST_INT) {
+                    text.append("\tmovl\t$%d, %%r10d\n", var->const_value);
+                } else if (var->type == SymbolType::INTCONST) {
+                    if (var->level == 1) {
+                        text.append("\tmovl\t%s(%%rip), %%r10d\n", ident.c_str());
+                    } else {
+                        text.append("\tmovl\t%d(%%rbp), %%r10d\n", var->offset);
+                    }
+                }
             }
         }
     } else {
         // 之前写的有问题 VarExpAST的维度是表达式，不一定是字面值常量
+        // TODO: 添加了一个is_pointer，用来判断是否是指针，也就是说，要根据变量是否是一个指针来判断最终是传指针还是值。
+        /**TODO: 还有一件事情，当VarExp的数组的维度与符号表中该数组存储的维度不一致时，说明这个VarExpAST是一个指针，需要进行特殊处理。
+          * 维度偏移量的计算没有问题，问题在于最终传递的是一个地址而不是一个值
+          * */
         Symbol *array = symbol_table.try_lookup(ident);
         int dim_size = dim.size();
         text.append("\tmovl\t$0, %%r11d\n"); // 也就是之前写的那个bias，由于bias可能是表达式，所以需要使用寄存器来中间存储一下
         for (int i = 1; i <= dim_size; i++) {
             if (i != dim_size) {
                 dim[i-1]->code_gen();
-//                text.append("\timull\t$%d, %%r11d\n", std::reduce(array->dims.begin() + i, array->dims.end(), 1, std::multiplies<int>()));
-//                text.append("\taddl\t%%r10d, %%r11d\n");
                 text.append("\timull\t$%d, %%r10d\n", std::reduce(array->dims.begin() + i, array->dims.end(), 1, std::multiplies<int>()));
                 text.append("\taddl\t%%r10d, %%r11d\n");
             } else {
@@ -618,53 +689,91 @@ void VarExpAST::code_gen() {
                 text.append("\taddl\t%%r10d, %%r11d\n");
             }
         }
-        if (array->type == SymbolType::CONST_ARRAY) {
-            if (array->level == 1) {
-                text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
-                text.append("\tshll\t$2, %%r11d\n");
-//            text.append("\tcltq\n");
-                text.append("\taddq\t%%rsi, %%r11\n");
-                text.append("\tmovl\t(%%rsi), %%r10d\n");
+        if (dim_size < array->dims.size()) {
+            if (is_pointer) {
+                throw std::runtime_error("Error: couldn't get the address of an array");
             } else {
-                text.append("\tleaq\t%s.%d(%%rip), %%rsi\n", ident.c_str(), array->level);
-                text.append("\tshll\t$2, %%r11d\n");
-//            text.append("\tcltq\n");
-                text.append("\taddq\t%%rsi, %%r11\n");
-                text.append("\tmovl\t(%%rsi), %%r10d\n");
+                is_pointer = true;
+                if (array->type == SymbolType::CONST_ARRAY) {
+                    if (array->level == 1) {
+                        text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tleaq\t%%rsi, %%r10\n");
+                    } else {
+                        text.append("\tleaq\t%s.%d(%%rip), %%rsi\n", ident.c_str(), array->level);
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tleaq\t%%rsi, %%r10\n");
+                    }
+                } else {
+                    if (array->level == 1) {
+                        text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tleaq\t%%rsi, %%r10\n");
+                    } else {
+                        text.append("\tleaq\t%d(%%rbp), %%rsi\n", array->offset);
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tleaq\t%%rsi, %%r10\n");
+                    }
+                }
             }
         } else {
-            if (array->level == 1) {
-                text.append("\tleaq\t%s(%%rip), %%rsi", ident.c_str());
-                text.append("\tshll\t$2, %%r11d\n");
-//                text.append("\tcltq\n");
-                text.append("\taddq\t%%rsi, %%r11\\n");
-                text.append("\tmovl\t(%%rsi), %%r10d\n");
+            if (is_pointer) {
+                if (array->type == SymbolType::CONST_ARRAY) {
+                    if (array->level == 1) {
+                        text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tleaq\t%%rsi, %%r10\n");
+                    } else {
+                        text.append("\tleaq\t%s.%d(%%rip), %%rsi\n", ident.c_str(), array->level);
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tleaq\t%%rsi, %%r10\n");
+                    }
+                } else {
+                    if (array->level == 1) {
+                        text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tleaq\t%%rsi, %%r10\n");
+                    } else {
+                        text.append("\tleaq\t%d(%%rbp), %%rsi\n", array->offset);
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tleaq\t%%rsi, %%r10\n");
+                    }
+                }
             } else {
-                text.append("\tleaq\t%d(%%rbp), %%rsi\n", array->offset);
-                text.append("\tshll\t$2, %%r11d\n");
-//                text.append("\tcltq\n");
-                text.append("\taddq\t%%rsi, %%r11\n");
-                text.append("\tmovl\t(%%rsi), %%r10d\n");
+                if (array->type == SymbolType::CONST_ARRAY) {
+                    if (array->level == 1) {
+                        text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tmovl\t(%%rsi), %%r10d\n");
+                    } else {
+                        text.append("\tleaq\t%s.%d(%%rip), %%rsi\n", ident.c_str(), array->level);
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tmovl\t(%%rsi), %%r10d\n");
+                    }
+                } else {
+                    if (array->level == 1) {
+                        text.append("\tleaq\t%s(%%rip), %%rsi", ident.c_str());
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\\n");
+                        text.append("\tmovl\t(%%rsi), %%r10d\n");
+                    } else {
+                        text.append("\tleaq\t%d(%%rbp), %%rsi\n", array->offset);
+                        text.append("\tshll\t$2, %%r11d\n");
+                        text.append("\taddq\t%%r11, %%rsi\n");
+                        text.append("\tmovl\t(%%rsi), %%r10d\n");
+                    }
+                }
             }
         }
-//        int bias = 0;
-//        Symbol *array = symbol_table.try_lookup(ident);
-//        int dim_size = dim.size();
-//        for (int i = 1; i <= dim_size; i++) {
-//            if (i != dim_size) {
-//                bias += dynamic_cast<NumExpAST*>(dim[i-1])->value * std::reduce(array->dims.begin() + i, array->dims.end(), 1, std::multiplies<int>());
-//            } else {
-//                bias += dynamic_cast<NumExpAST*>(dim[i-1])->value;
-//            }
-//        }
-//        if (array->type == SymbolType::CONST_ARRAY) {
-//            text.append("\tmovl\t$%d, %%r10d\n", symbol_table.lookup(ident)->const_array_values[bias-1]);
-//        } else if (array->type == SymbolType::INT_ARRAY) {
-//            if (array->level == 1) {
-//                text.append("\tmovl\t%s+%d(%%rip), %%r10d\n", ident.c_str(), bias * 4);
-//            } else {
-//                text.append("\tmovl\t%d(%%rbp), %%r10d\n", symbol_table.lookup(ident)->offset + bias * 4);
-//            }
-//        }
     }
 }

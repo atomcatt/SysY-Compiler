@@ -118,10 +118,31 @@ CompUnitAST
                                     NumExpAST: 10
             BlockItemAST
                 DeclAST
+                    VarDeclAST
+                        VarDefAST: arr3
+                            NumExpAST: 5
+                            InitValAST
+                                InitValAST
+                                    NumExpAST: 1
+                                InitValAST
+                                    NumExpAST: 2
+                                InitValAST
+                                    NumExpAST: 3
+                                InitValAST
+                                    NumExpAST: 4
+                                InitValAST
+                                    NumExpAST: 5
+            BlockItemAST
+                DeclAST
                     ConstDeclAST
                         ConstDefAST: xxx
                             ConstInitValAST
                                 NumExpAST: 9
+            BlockItemAST
+                ExpStmtAST
+                    FuncCallAST: foo
+                        VarExpAST: t
+                        VarExpAST: arr3
             BlockItemAST
                 ReturnStmtAST
                     BinaryExpAST: +

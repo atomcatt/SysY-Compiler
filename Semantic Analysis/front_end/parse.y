@@ -59,6 +59,8 @@
 %token MUL
 %token DIV
 %token MOD
+%token SINGLEAND
+%token SINGLEOR
 %token NOT
 %token LPAREN
 %token RPAREN
@@ -70,6 +72,7 @@
 %token SEMI
 %token HASH
 %token <const_string_val> Ident
+ /* %token <const_string_val> GetAddressOfIdent */
 %token <const_int_val> IntConst
 %token <const_string_val> HeaderFile
 %token <const_string_val> String
@@ -729,6 +732,23 @@ PrimaryExp
         ptr->value = $1;
         $$ = ptr;
     }
+|   SINGLEAND Ident
+    {
+        fprintf(detail_fp, "&%s -> PrimaryExp\n", $2);
+        auto ptr = new VarExpAST();
+        ptr->ident = $2;
+        ptr->is_pointer = true;
+        $$ = ptr;
+    }
+|   SINGLEAND Ident ArrDef
+    {
+        fprintf(detail_fp, "&%s ArrDef -> PrimaryExp\n", $2);
+        auto ptr = new VarExpAST();
+        ptr->ident = $2;
+        ptr->dim = $3->dim;
+        ptr->is_pointer = true;
+        $$ = ptr;
+    }
 ;
 
 UnaryExp
@@ -742,7 +762,7 @@ UnaryExp
         fprintf(detail_fp, "%s ( ) -> UnaryExp\n", $1);
         auto ptr = new FuncCallAST();
         ptr->ident = $1;
-        ptr->r_args.emplace_back(nullptr);
+        // ptr->r_args.emplace_back(nullptr);
         $$ = ptr;
         $$ = ptr;
     }
@@ -984,7 +1004,6 @@ int main() {
     detail_fp = fopen("./results/plot/detail.txt", "w");
     printf("Start\n");
     FILE *file = fopen("out.s", "w");
-    // assemble_init();
     rodata.append(".section .rodata\n");
     data.append(".section .data\n");
     bss.append(".section .bss\n");
@@ -997,16 +1016,6 @@ int main() {
     show_ast(root, 0);
     // 恢复 std::cout 的缓冲区
     std::cout.rdbuf(coutbuf);
-    // assemble_init();
-    // BaseAST* base = root;
-    // CompUnitAST* root = dynamic_cast<CompUnitAST*>(root);
-    // root->const_eval(base);
-    // ConstDeclAST* t = new ConstDeclAST();
-    // t->const_eval(root);
-    // root->const_eval(root);
-    // const std::type_info& objType = typeid(dynamic_cast<CompUnitAST*>(root));
-    // // 使用type_info的name()成员函数获取类型名
-    // std::cout << "Type of obj: " << objType.name() << std::endl;
     root = (dynamic_cast<CompUnitAST*>(root));
     root->const_eval(root);
     root->code_gen();

@@ -71,6 +71,7 @@ ONELINECOMMENT      "//".*
 COMMENT             “/*”(.|\n)*“*/”
 HEADERFILE          "<"{IDENTIFIER}".h>"|\"{IDENTIFIER}".h"\"
 STRING              \".*\"
+ /* GETADDRESS          "&"{IDENTIFIER} */
 
 
 
@@ -110,6 +111,8 @@ STRING              \".*\"
 "*" {int len = strlen(yytext); print_info(yytext, len, 8); chars += len; return MUL;}
 "/" {int len = strlen(yytext); print_info(yytext, len, 8); chars += len; return DIV;}
 "%" {int len = strlen(yytext); print_info(yytext, len, 13); chars += len; return MOD;}
+"&" {int len = strlen(yytext); print_info(yytext, len, 9); chars += len; return SINGLEAND;}
+"|" {int len = strlen(yytext); print_info(yytext, len, 9); chars += len; return SINGLEOR;}
 "!" {int len = strlen(yytext); print_info(yytext, len, 9); chars += len; return NOT;}
 "[" {int len = strlen(yytext); print_info(yytext, len, 15); chars += len; return LBRACK;}
 "]" {int len = strlen(yytext); print_info(yytext, len, 14); chars += len; return RBRACK;}
@@ -134,6 +137,7 @@ STRING              \".*\"
 
 {ILLEGALIDENT} {printf("Illegal identifier: %s\n", yytext); chars += strlen(yytext);}
 {IDENTIFIER} {int len = strlen(yytext); print_info(yytext, len, 0); chars += len; yylval.const_string_val = strdup(yytext);return Ident;}
+ /* {GETADDRESS} {int len = strlen(yytext); print_info(yytext, len, 0); chars += len; yylval.const_string_val = strdup(yytext);return GetAddressOfIdent;} */
 {HEADERFILE} {int len = strlen(yytext); print_info(yytext, len, 2); chars += len; yylval.const_string_val = strdup(yytext); return HeaderFile;}
 {STRING} {int len = strlen(yytext); print_info(yytext, len, 0); chars += len; yylval.const_string_val = strdup(yytext); return String;}
 

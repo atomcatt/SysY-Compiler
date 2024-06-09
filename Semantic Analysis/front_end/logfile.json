@@ -4257,3 +4257,723 @@
 [+] [sym_table ] [2] lookup 'tt'
 [+] [sym_table ] [2->1] pop
 [+] [----------------------------------------------------------------------] 
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [----------------------------------------------------------------------] 
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'main'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] insert 't'
+[+] [symbol_value] 1
+[+] [offset    ] -4
+[+] [sym_table ] [2] insert 'arr'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -28
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] insert 'i'
+[+] [symbol_value] 2
+[+] [offset    ] -32
+[+] [sym_table ] [2] insert 'j'
+[+] [symbol_value] 1
+[+] [offset    ] -36
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'i'
+[+] [sym_table ] [2] lookup 'j'
+[+] [sym_table ] [2] insert 'n'
+[+] [symbol_value] 0
+[+] [offset    ] -44
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'i'
+[+] [sym_table ] [2] lookup 'j'
+[+] [sym_table ] [2] insert 'm'
+[+] [symbol_value] 0
+[+] [offset    ] -48
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] -52
+[+] [sym_table ] [2] lookup 'xxx'
+[+] [sym_table ] [2] lookup 'tt'
+[+] [sym_table ] [2->1] pop
+[+] [----------------------------------------------------------------------] 
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'main'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] insert 't'
+[+] [symbol_value] 1
+[+] [offset    ] -4
+[+] [sym_table ] [2] insert 'arr'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -28
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] insert 'i'
+[+] [symbol_value] 2
+[+] [offset    ] -32
+[+] [sym_table ] [2] insert 'j'
+[+] [symbol_value] 1
+[+] [offset    ] -36
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'i'
+[+] [sym_table ] [2] lookup 'j'
+[+] [sym_table ] [2] insert 'n'
+[+] [symbol_value] 0
+[+] [offset    ] -44
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'i'
+[+] [sym_table ] [2] lookup 'j'
+[+] [sym_table ] [2] insert 'm'
+[+] [symbol_value] 0
+[+] [offset    ] -48
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'arr2'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -84
+[+] [sym_table ] [2] insert 'arr3'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -104
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] -108
+[+] [sym_table ] [2] lookup 'xxx'
+[+] [sym_table ] [2] lookup 'tt'
+[+] [sym_table ] [2->1] pop
+[+] [----------------------------------------------------------------------] 
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'main'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] insert 't'
+[+] [symbol_value] 1
+[+] [offset    ] -4
+[+] [sym_table ] [2] insert 'arr'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -28
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] insert 'i'
+[+] [symbol_value] 2
+[+] [offset    ] -32
+[+] [sym_table ] [2] insert 'j'
+[+] [symbol_value] 1
+[+] [offset    ] -36
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'i'
+[+] [sym_table ] [2] lookup 'j'
+[+] [sym_table ] [2] insert 'n'
+[+] [symbol_value] 0
+[+] [offset    ] -44
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'i'
+[+] [sym_table ] [2] lookup 'j'
+[+] [sym_table ] [2] insert 'm'
+[+] [symbol_value] 0
+[+] [offset    ] -48
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'arr2'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -84
+[+] [sym_table ] [2] insert 'arr3'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -104
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] -108
+[+] [sym_table ] [2] lookup 'xxx'
+[+] [sym_table ] [2] lookup 'tt'
+[+] [sym_table ] [2->1] pop
+[+] [----------------------------------------------------------------------] 
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'main'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] insert 't'
+[+] [symbol_value] 1
+[+] [offset    ] -4
+[+] [sym_table ] [2] insert 'arr'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -28
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] insert 'i'
+[+] [symbol_value] 2
+[+] [offset    ] -32
+[+] [sym_table ] [2] insert 'j'
+[+] [symbol_value] 1
+[+] [offset    ] -36
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'i'
+[+] [sym_table ] [2] lookup 'j'
+[+] [sym_table ] [2] insert 'n'
+[+] [symbol_value] 0
+[+] [offset    ] -44
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'i'
+[+] [sym_table ] [2] lookup 'j'
+[+] [sym_table ] [2] insert 'm'
+[+] [symbol_value] 0
+[+] [offset    ] -48
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'arr2'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -84
+[+] [sym_table ] [2] insert 'arr3'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -104
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] -108
+[+] [sym_table ] [2] lookup 'arr3'
+[+] [sym_table ] [2] lookup 't'
+[+] [sym_table ] [2] lookup 'xxx'
+[+] [sym_table ] [2] lookup 'tt'
+[+] [sym_table ] [2->1] pop
+[+] [----------------------------------------------------------------------] 
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'foo'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'a'
+[+] [sym_table ] new symbol table
+[+] [sym_table ] new symbol table
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] 0
+[+] [sym_table ] [2->1] pop
+[+] [sym_table ] [1] insert 'tt'
+[+] [symbol_value] 4
+[+] [offset    ] 0
+[+] [sym_table ] [1->2] push
+[+] [sym_table ] [2] insert 'main'
+[+] [symbol_value] 0
+[+] [offset    ] 0
+[+] [sym_table ] [2] insert 't'
+[+] [symbol_value] 1
+[+] [offset    ] -4
+[+] [sym_table ] [2] insert 'arr'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -28
+[+] [sym_table ] [2] insert 'a'
+[+] [symbol_value] [+] [1         ] [+] [2         ] [+] [3         ] [+] [4         ] [+] [0         ] [+] [0         ] [+] [7         ] [+] [0         ] [+] [end       ] 
+[+] [offset    ] 0
+[+] [sym_table ] [2] insert 'i'
+[+] [symbol_value] 2
+[+] [offset    ] -32
+[+] [sym_table ] [2] insert 'j'
+[+] [symbol_value] 1
+[+] [offset    ] -36
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'i'
+[+] [sym_table ] [2] lookup 'j'
+[+] [sym_table ] [2] insert 'n'
+[+] [symbol_value] 0
+[+] [offset    ] -44
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'i'
+[+] [sym_table ] [2] lookup 'j'
+[+] [sym_table ] [2] insert 'm'
+[+] [symbol_value] 0
+[+] [offset    ] -48
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] lookup 'arr'
+[+] [sym_table ] [2] insert 'arr2'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -84
+[+] [sym_table ] [2] insert 'arr3'
+[+] [symbol_value] [+] [end       ] 
+[+] [offset    ] -104
+[+] [sym_table ] [2] insert 'xxx'
+[+] [symbol_value] 9
+[+] [offset    ] -108
+[+] [sym_table ] [2] lookup 'arr3'
+[+] [sym_table ] [2] lookup 't'
+[+] [sym_table ] [2] lookup 'xxx'
+[+] [sym_table ] [2] lookup 'tt'
+[+] [sym_table ] [2->1] pop
+[+] [----------------------------------------------------------------------] 

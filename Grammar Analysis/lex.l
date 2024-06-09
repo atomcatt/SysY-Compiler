@@ -2,7 +2,7 @@
 %{
     #include <stdio.h>
     #include <stdlib.h>
-    #include "parse.tab.h"
+    #include "parse.tab.hpp"
 
     int lines = 1;
     int words = 0;

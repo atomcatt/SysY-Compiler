@@ -127,11 +127,11 @@ ConstDef
 ConstDefGroup
 :   LBRACK ConstExp RBRACK 
     {
-        printf("[ ConstExp ] -> ConstDefGroup\n")
+        printf("[ ConstExp ] -> ConstDefGroup\n");
     }
 |   ConstDefGroup LBRACK ConstExp RBRACK   
     {
-        printf("ConstDefGroup [ ConstExp ] -> ConstDefGroup\n")
+        printf("ConstDefGroup [ ConstExp ] -> ConstDefGroup\n");
     }
 ;
 

@@ -5,814 +5,11 @@ PrimaryExp -> UnaryExp
 UnaryExp -> MulExp
 MulExp -> AddExp
 AddExp -> ConstExp
-[ ConstExp ] -> ConstArrDef
-0 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
 ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-b0 ConstArrDef = ConstInitVal -> ConstDef
+tt = ConstInitVal -> ConstDef
 ConstDef -> ConstDefList
 const int ConstDefList ; -> ConstDecl
 ConstDecl -> Decl
-CompUnit Decl -> CompUnit
-7 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-[ ConstExp ] -> ConstArrDef
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-8 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-6 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-9 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-c0 ConstArrDef = ConstInitVal -> ConstDef
-ConstDef -> ConstDefList
-const int ConstDefList ; -> ConstDecl
-ConstDecl -> Decl
-CompUnit Decl -> CompUnit
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-[ ConstExp ] -> ConstArrDef
-22 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-33 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-e0 ConstArrDef = ConstInitVal -> ConstDef
-ConstDef -> ConstDefList
-9 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-[ ConstExp ] -> ConstArrDef
-85 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-0 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-29 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-g0 ConstArrDef = ConstInitVal -> ConstDef
-ConstDef , ConstDef -> ConstDefList
-const int ConstDefList ; -> ConstDecl
-ConstDecl -> Decl
-CompUnit Decl -> CompUnit
-9 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-scj82c9s0j = ConstInitVal -> ConstDef
-ConstDef -> ConstDefList
-const int ConstDefList ; -> ConstDecl
-ConstDecl -> Decl
-CompUnit Decl -> CompUnit
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-[ ConstExp ] -> ConstArrDef
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstArrDef [ ConstExp ] -> ConstArrDef
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-4 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-6 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-7 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-8 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-9 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-10 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-11 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-12 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-13 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-14 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-15 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-c ConstArrDef = ConstInitVal -> ConstDef
-ConstDef -> ConstDefList
-const int ConstDefList ; -> ConstDecl
-ConstDecl -> Decl
-CompUnit Decl -> CompUnit
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-[ ConstExp ] -> ConstArrDef
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstArrDef [ ConstExp ] -> ConstArrDef
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitVal -> ConstInitValList
-4 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-6 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-7 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-8 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-9 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-10 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-11 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-12 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-13 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-14 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-15 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-d ConstArrDef = ConstInitVal -> ConstDef
-ConstDef -> ConstDefList
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-[ ConstExp ] -> ConstArrDef
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstArrDef [ ConstExp ] -> ConstArrDef
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitVal -> ConstInitValList
-4 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-6 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-7 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-8 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-9 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-10 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-11 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-12 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-13 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-14 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-15 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-e ConstArrDef = ConstInitVal -> ConstDef
-ConstDef , ConstDef -> ConstDefList
-const int ConstDefList ; -> ConstDecl
-ConstDecl -> Decl
-CompUnit Decl -> CompUnit
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-[ ConstExp ] -> ConstArrDef
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstArrDef [ ConstExp ] -> ConstArrDef
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-4 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-7 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-10 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-11 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-12 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-g ConstArrDef = ConstInitVal -> ConstDef
-ConstDef -> ConstDefList
-const int ConstDefList ; -> ConstDecl
-ConstDecl -> Decl
-CompUnit Decl -> CompUnit
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-Exp -> InitVal
-tt = InitVal -> VarDef
-VarDef -> VarDefList
-int VarDeclList ; -> VarDecl
-VarDecl -> Decl
-CompUnit Decl -> CompUnit
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-[ Exp ] -> ArrDef
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-ArrDef [ Exp ] -> ArrDef
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-ArrDef [ Exp ] -> ArrDef
-{ } -> InitVal
-i Arrdef = InitVal -> VarDef
-VarDef -> VarDefList
-int VarDeclList ; -> VarDecl
-VarDecl -> Decl
-CompUnit Decl -> CompUnit
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-[ Exp ] -> ArrDef
-4 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-ArrDef [ Exp ] -> ArrDef
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-ArrDef [ Exp ] -> ArrDef
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-Exp -> InitVal
-InitVal -> InitValList
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-Exp -> InitVal
-InitValList , InitVal -> InitValList
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-Exp -> InitVal
-InitValList , InitVal -> InitValList
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-Exp -> InitVal
-InitValList , InitVal -> InitValList
-{ InitValList } -> InitVal
-k Arrdef = InitVal -> VarDef
-VarDef -> VarDefList
-int VarDeclList ; -> VarDecl
-VarDecl -> Decl
-CompUnit Decl -> CompUnit
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-[ ConstExp ] -> ConstArrDef
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstArrDef [ ConstExp ] -> ConstArrDef
-4 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstArrDef [ ConstExp ] -> ConstArrDef
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-4 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-5 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> ConstExp
-ConstExp -> ConstInitVal
-ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ } -> ConstInitVal
-ConstInitValList , ConstInitVal -> ConstInitValList
-{ ConstInitValList } -> ConstInitVal
-j ConstArrDef = ConstInitVal -> ConstDef
-ConstDef -> ConstDefList
-const int ConstDefList ; -> ConstDecl
-ConstDecl -> Decl
-CompUnit Decl -> CompUnit
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-[ Exp ] -> ArrDef
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-ArrDef [ Exp ] -> ArrDef
-1 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-Exp -> InitVal
-InitVal -> InitValList
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-Exp -> InitVal
-InitValList , InitVal -> InitValList
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-Exp -> InitVal
-InitValList , InitVal -> InitValList
-{ InitValList } -> InitVal
-InitVal -> InitValList
-{ } -> InitVal
-InitValList , InitVal -> InitValList
-{ InitValList } -> InitVal
-l Arrdef = InitVal -> VarDef
-VarDef -> VarDefList
-int VarDeclList ; -> VarDecl
-VarDecl -> Decl
 CompUnit Decl -> CompUnit
 1 -> PrimaryExp
 PrimaryExp -> UnaryExp
@@ -1035,6 +232,114 @@ int VarDeclList ; -> VarDecl
 VarDecl -> Decl
 Decl -> BlockItem
 BlockGroup BlockItem -> BlockGroup
+3 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+3 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+ArrDef [ Exp ] -> ArrDef
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+ArrDef [ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitVal -> InitValList
+2 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+3 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+5 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+6 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+2 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+[ Exp ] -> ArrDef
+1 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+ArrDef [ Exp ] -> ArrDef
+Ident ArrDef -> LVal
+LVal -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+8 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+9 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+10 -> PrimaryExp
+PrimaryExp -> UnaryExp
+UnaryExp -> MulExp
+MulExp -> AddExp
+AddExp -> Exp
+Exp -> InitVal
+InitValList , InitVal -> InitValList
+{ InitValList } -> InitVal
+arr2 Arrdef = InitVal -> VarDef
+VarDef -> VarDefList
+int VarDeclList ; -> VarDecl
+VarDecl -> Decl
+Decl -> BlockItem
+BlockGroup BlockItem -> BlockGroup
 9 -> PrimaryExp
 PrimaryExp -> UnaryExp
 UnaryExp -> MulExp
@@ -1046,43 +351,6 @@ ConstDef -> ConstDefList
 const int ConstDefList ; -> ConstDecl
 ConstDecl -> Decl
 Decl -> BlockItem
-BlockGroup BlockItem -> BlockGroup
-2 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-[ Exp ] -> ArrDef
-Ident ArrDef -> LVal
-LVal -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-3 -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-[ Exp ] -> ArrDef
-Ident ArrDef -> LVal
-LVal -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-AddExp + MulExp -> AddExp
-scj82c9s0j -> LVal
-LVal -> PrimaryExp
-PrimaryExp -> UnaryExp
-UnaryExp -> MulExp
-AddExp + MulExp -> AddExp
-AddExp -> Exp
-Exp -> FuncRParams
-"%d\n" , FuncRParams -> FuncRParams
-printf ( FuncRParams ) -> UnaryExp
-UnaryExp -> MulExp
-MulExp -> AddExp
-AddExp -> Exp
-Exp ; -> Stmt
-Stmt -> BlockItem
 BlockGroup BlockItem -> BlockGroup
 xxx -> LVal
 LVal -> PrimaryExp

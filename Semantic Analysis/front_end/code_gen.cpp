@@ -237,11 +237,29 @@ void VarDefAST::code_gen() {
                 symbol_table.insert(ident, new Symbol(SymbolType::INT_ARRAY, compile_state.get_offset(), 1, dims, values));
             } else {
                 // std::cout << __LINE__ << std::endl;
+//                for (int i = 0; i < size; i++) {
+//                    text.append("\tmovl\t$%d, %d(%%rbp)\n", dynamic_cast<NumExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))->value, compile_state.get_offset() + i * 4);
+//                    values.emplace_back(dynamic_cast<NumExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))->value);
+//                }
+//                symbol_table.insert(ident, new Symbol(SymbolType::INT_ARRAY, compile_state.get_offset(), 1, dims, values));
                 for (int i = 0; i < size; i++) {
-                    text.append("\tmovl\t$%d, %d(%%rbp)\n", dynamic_cast<NumExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))->value, compile_state.get_offset() + i * 4);
-                    values.emplace_back(dynamic_cast<NumExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))->value);
+                    if (dynamic_cast<NumExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))) {
+                        text.append("\tmovl\t$%d, %d(%%rbp)\n", dynamic_cast<NumExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))->value, compile_state.get_offset() + i * 4);
+                    } else if (dynamic_cast<VarExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))) {
+                        dynamic_cast<VarExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))->code_gen();
+                        text.append("\tmovl\t%%r10d, %d(%%rbp)\n", compile_state.get_offset() + i * 4);
+                    } else if (dynamic_cast<BinaryExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))) {
+                        dynamic_cast<BinaryExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))->code_gen();
+                        text.append("\tmovl\t%%r10d, %d(%%rbp)\n", compile_state.get_offset() + i * 4);
+                    } else if (dynamic_cast<UnaryExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))) {
+                        dynamic_cast<UnaryExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))->code_gen();
+                        text.append("\tmovl\t%%r10d, %d(%%rbp)\n", compile_state.get_offset() + i * 4);
+                    } else if (dynamic_cast<FuncCallAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))) {
+                        dynamic_cast<FuncCallAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))->code_gen();
+                        text.append("\tmovl\t%%eax, %d(%%rbp)\n", compile_state.get_offset() + i * 4);
+                    }
                 }
-                symbol_table.insert(ident, new Symbol(SymbolType::INT_ARRAY, compile_state.get_offset(), 1, dims, values));
+                symbol_table.insert(ident, new Symbol(SymbolType::INT_ARRAY, compile_state.get_offset(), 1, dims, std::vector<int>()));
             }
             // for (int i = 0; i < std::get<InitValListAST*>(init_val->value)->init_vals.size(); i++) {
             //     text.append("\tmovl\t$%d, %d(%%rbp)\n", dynamic_cast<NumExpAST*>(std::get<ExpAST*>(std::get<InitValListAST*>(init_val->value)->init_vals[i]->value))->value, compile_state.get_offset() + i * 4);
@@ -368,23 +386,6 @@ void ReturnStmtAST::code_gen() {
 }
 
 void UnaryExpAST::code_gen() {
-    // if (dynamic_cast<NumExpAST*>(value)) {
-    //     if (op == "-") {
-    //         text.append("\tmovl\t$%d, %%eax\n", -dynamic_cast<NumExpAST*>(value)->value);
-    //     } else if (op == "!") {
-    //         text.append("\tmovl\t$%d, %%eax\n", !dynamic_cast<NumExpAST*>(value)->value);
-    //     } else {
-    //         text.append("\tmovl\t$%d, %%eax\n", dynamic_cast<NumExpAST*>(value)->value);
-    //     }
-    // } else if (dynamic_cast<VarExpAST*>(value)) {
-        
-    // } else if (dynamic_cast<BinaryExpAST*>(value)) {
-    //     dynamic_cast<BinaryExpAST*>(value)->code_gen();
-    // } else if (dynamic_cast<UnaryExpAST*>(value)) {
-    //     dynamic_cast<UnaryExpAST*>(value)->code_gen();
-    // } else if (dynamic_cast<FuncCallAST*>(value)) {
-    //     dynamic_cast<FuncCallAST*>(value)->code_gen();
-    // }
     if (op == "+") {
         value->code_gen();
     } else if (op == "-") {
@@ -438,7 +439,9 @@ void FuncCallAST::code_gen() {
     } else {
         for (int i = 0; i < r_args.size(); i++) {
             /* TODO */
+            if (dynamic_cast<NumExpAST*>(r_args[i])) {
 
+            }
         }
         text.append("\tcall\t%s\n", ident.c_str());
     }
@@ -599,14 +602,16 @@ void VarExpAST::code_gen() {
             }
         }
     } else {
-        // 有问题 VarExpAST的维度是表达式，不一定是字面值常量
+        // 之前写的有问题 VarExpAST的维度是表达式，不一定是字面值常量
         Symbol *array = symbol_table.try_lookup(ident);
         int dim_size = dim.size();
-        text.append("\tmovl\t$0, %%r11d\n");
+        text.append("\tmovl\t$0, %%r11d\n"); // 也就是之前写的那个bias，由于bias可能是表达式，所以需要使用寄存器来中间存储一下
         for (int i = 1; i <= dim_size; i++) {
             if (i != dim_size) {
                 dim[i-1]->code_gen();
-                text.append("\timull\t$%d, %%r11d\n", std::reduce(array->dims.begin() + i, array->dims.end(), 1, std::multiplies<int>()));
+//                text.append("\timull\t$%d, %%r11d\n", std::reduce(array->dims.begin() + i, array->dims.end(), 1, std::multiplies<int>()));
+//                text.append("\taddl\t%%r10d, %%r11d\n");
+                text.append("\timull\t$%d, %%r10d\n", std::reduce(array->dims.begin() + i, array->dims.end(), 1, std::multiplies<int>()));
                 text.append("\taddl\t%%r10d, %%r11d\n");
             } else {
                 dim[i-1]->code_gen();
@@ -614,11 +619,19 @@ void VarExpAST::code_gen() {
             }
         }
         if (array->type == SymbolType::CONST_ARRAY) {
-            text.append("\tleaq\t%s(%rip), %%rsi\n", ident.c_str());
-            text.append("\tshll\t$2, %%r11d\n");
+            if (array->level == 1) {
+                text.append("\tleaq\t%s(%%rip), %%rsi\n", ident.c_str());
+                text.append("\tshll\t$2, %%r11d\n");
 //            text.append("\tcltq\n");
-            text.append("\taddq\t%%rsi, %%r11\n");
-            text.append("\tmovl\t(%%rsi), %%r10d\n");
+                text.append("\taddq\t%%rsi, %%r11\n");
+                text.append("\tmovl\t(%%rsi), %%r10d\n");
+            } else {
+                text.append("\tleaq\t%s.%d(%%rip), %%rsi\n", ident.c_str(), array->level);
+                text.append("\tshll\t$2, %%r11d\n");
+//            text.append("\tcltq\n");
+                text.append("\taddq\t%%rsi, %%r11\n");
+                text.append("\tmovl\t(%%rsi), %%r10d\n");
+            }
         } else {
             if (array->level == 1) {
                 text.append("\tleaq\t%s(%%rip), %%rsi", ident.c_str());

@@ -1,2 +1,2 @@
 # SysY-Compiler
-RUC 编译原理大作业
+基于flex，bison，C++实现了一个SysY语言的编译器
